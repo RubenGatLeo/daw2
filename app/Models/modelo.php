@@ -43,7 +43,7 @@ class Modelo extends Model{
         //Recibo el usuario y compruebo para que muestre los articulos que no sean tuyos ademas de los que esten en activo
         $orden="SELECT codigo_articulo,a.nombre,precio FROM articulos a 
                 join usuarios u on a.cod_usuario=u.cod_usuario
-                where activo=1 and u.cod_usuario!='".$us."' ";
+                where activo=1 and u.nombre!='".$us."' ";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
@@ -74,7 +74,7 @@ class Modelo extends Model{
     }
     //Funcion pque devuelve informacion (Nombre,precio y cuando se oferto)sobre los articulos en venta de un usuario
     function queVende($codUs){
-        $orden="SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario=".$codUs.";";
+        $orden="SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario=".$codUs." order by ofertado desc;";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
@@ -84,7 +84,19 @@ class Modelo extends Model{
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
-        
+    //Funcion para enviar un mensaje y almacenarlo en la base de datos
+    function enviarMensaje($codUsu,$codArticulo,$mensaje){
+        $orden="INSERT into mensajes(cod_usuario,cod_articulo,mensaje) values ('".$codUsu."','".$codArticulo."','".$mensaje."');";
+        $this->db->query($orden);
+    }  
+    //Funcion que devuelve los mensajes,quien y cuando que se han mandado a un producto
+    function mensajesRecibidos($codArticulo){
+        $orden="SELECT u.usuario,mensaje,fecha from mensajes m 
+                join usuarios u on m.cod_usuario=u.cod_usuario 
+                where cod_articulo=".$codArticulo." order by fecha desc;";
+        $respuesta=$this->db->query($orden);
+        return $respuesta->getResultArray();        
+    }
 }
 
 ?>

@@ -16,6 +16,8 @@
     <?php
     //Enlace a la zona de usuarios 
     echo "<a href=".base_url()."/login>Entrar en la zona de socios</a>";
+    //Falta opcion de elegir la categoria con un dropdown
+    
     //Tabla con los articulos  contiene la referencia, el articulo, la descripcion el precio y la imagen 
     echo "<table border=1 width=100%><tr><td>REF</td><td>Articulo</td><td>Precio</td><td>Descripcion</td><td>Imagen</td></tr>";
     foreach ($articulos as $indice) {

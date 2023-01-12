@@ -50,10 +50,10 @@
         echo "</td><td>";
         echo form_open("/nuevoMensaje");
         //dropdown para elegir una oferta para mandarle un mensaje
-        echo form_dropdown("mensaje",$mensajeOferta);
-        $datos3=array("name"=>"datos","placeholder"=>"Escribe tu mensaje para contactar");
+        echo form_dropdown("articulo",$mensajeOferta);
+        $datos3=array("name"=>"mensaje","placeholder"=>"Escribe tu mensaje para contactar");
         echo "<br>".form_textArea($datos3);
-        echo "<br>".form_submit("boton","Escribe aqui tu mensaje para la oferta");
+        echo "<br>".form_submit("boton","Enviar mensaje");
         echo form_close()." </td></tr></table>";
     ?>
 </body>

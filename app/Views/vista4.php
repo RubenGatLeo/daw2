@@ -14,8 +14,6 @@
     </div>
     <?php
         helper("form");
-        //POSIBLEMENTE el usuario sea mejor meterlo en una sesion y asi no tener que reenviarlo cada vez
-        //FUNCIONANDO -^ 
         echo "<h1>Usuario identificado: ".$usuario."</h1>";
         echo "</div>";
         echo "<a href='".base_url()."/inicioUsuario'>Volver</a>";
@@ -41,8 +39,13 @@
         echo "<br>".form_submit("boton","Modificar Producto")."</td></tr>";
 
         echo "</table>";
-        echo "<table style=float:left><thead><tr><th>Mensajes recibidos</th></tr></thead>";
-        echo "</table>";
+        echo "<table style=float:left><thead><tr><th>Mensajes recibidos</th></tr></thead><tbody>";
+        //Aqui iran saliendo todos los mensajes que haya recibido un producto
+        foreach ($mensajesRecibidos as $campo) {
+            echo "<tr><td><strong>Usuario</strong>: ".$campo["usuario"]." <br><strong>Fecha</strong>:".$campo["fecha"]."<br>";
+            echo "<strong>Mensaje</strong>: ".$campo["mensaje"]."</td</tr>";
+        }
+        echo "</tbody></table>";
 ?>
 
 

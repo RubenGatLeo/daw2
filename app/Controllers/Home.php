@@ -71,11 +71,11 @@ class Home extends BaseController{
         $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
         $this->verVista3($maleta);
         
-
+        
     }
     //Funcion para mostrar la vista 3 con los datos que necesite y asi no estar repitiendo cada vez una accion te manda a esa vista
     public function verVista3($maleta){
-       
+        
         helper("funciones");
         $maleta["mensajeOferta"]=paraOfertas($this->modelo->dimeOfertasMensaje($maleta["usuario"]));
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
@@ -88,6 +88,9 @@ class Home extends BaseController{
         //NECESITO FOTO NOMBRE INFO PRECIO Y ACTIVO
         $maleta["info"]=$this->modelo->datosProducto($maleta["articulo"]);
         $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        //Recupero los mensajes que haya recibido ese producto para mostrarlos 
+        $maleta["mensajesRecibidos"]=$this->modelo->mensajesRecibidos($maleta["articulo"]);
+
         return view("vista4",$maleta);
     }
     //Funcion que recoge los datos del formulario y modifica la informacion 
@@ -103,6 +106,18 @@ class Home extends BaseController{
         //Necesario para mostrar la vista4 
         $maleta["info"]=$this->modelo->datosProducto($maleta["articulo"]);
         $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        $maleta["mensajesRecibidos"]=$this->modelo->mensajesRecibidos($maleta["articulo"]);
+
         return view("vista4",$maleta);
+    }
+    public function nuevoMensaje(){
+        $user=session()->get("codUsu");
+        $articulo=$this->request->getPost("articulo");
+        $mensaje=$this->request->getPost("mensaje");
+
+        $this->modelo->enviarMensaje($user,$articulo,$mensaje);
+
+        $maleta["usuario"]=$this->modelo->nombreUsuario($user);
+        $this->verVista3($maleta);
     }
 }
