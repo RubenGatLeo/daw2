@@ -37,6 +37,7 @@
         }
         echo form_hidden("articulo",$articulo);
         echo "<br>".form_submit("boton","Modificar Producto")."</td></tr>";
+        echo form_close();
 
         echo "</table>";
         echo "<table style=float:left><thead><tr><th>Mensajes recibidos</th></tr></thead><tbody>";

@@ -12,7 +12,9 @@ class Home extends BaseController{
         $this->modelo=new Modelo();
     }
     public function index(){
+        helper("funciones");
         $maleta["articulos"]= $this->modelo->articulosEnVenta();
+        $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
         return view('vista1',$maleta);
     }
     public function login(){
