@@ -1,0 +1,230 @@
+CRITICAL - 2023-01-11 05:33:14 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(89): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:33:24 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(89): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:33:55 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:33:55 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:33:56 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:33:56 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:34:01 --> Undefined variable $usuario
+in APPPATH\Views\vista4.php on line 18.
+ 1 APPPATH\Views\vista4.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\vista4.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('vista4')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:45:44 --> Undefined variable $misArticulos
+in APPPATH\Views\vista3.php on line 26.
+ 1 APPPATH\Views\vista3.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $misArticulos', 'APPPATH\\Views\\vista3.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista3', [], true)
+ 5 APPPATH\Controllers\Home.php(90): view('vista3', [...])
+ 6 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:46:30 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:46:31 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:46:31 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:46:31 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:46:32 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:46:32 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 90)
+ 2 APPPATH\Controllers\Home.php(48): App\Controllers\Home->verVista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 05:52:29 --> Undefined variable $misArticulos
+in APPPATH\Views\vista3.php on line 26.
+ 1 APPPATH\Views\vista3.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $misArticulos', 'APPPATH\\Views\\vista3.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista3', [], true)
+ 5 APPPATH\Controllers\Home.php(62): view('vista3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 06:28:12 --> Undefined variable $indice
+in APPPATH\Views\vista4.php on line 30.
+ 1 APPPATH\Views\vista4.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $indice', 'APPPATH\\Views\\vista4.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista4', [], true)
+ 5 APPPATH\Controllers\Home.php(91): view('vista4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->infoProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 06:45:30 --> Undefined variable $maleta
+in APPPATH\Controllers\Home.php on line 100.
+ 1 APPPATH\Controllers\Home.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $maleta', 'APPPATH\\Controllers\\Home.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 06:46:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT nombre,p...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombre,p...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombre,p...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(83): CodeIgniter\Database\BaseConnection->query('SELECT nombre,p...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(101): App\Models\Modelo->datosProducto(NULL)
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-11 06:46:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT nombre,precio,descripcion,imagen,activo from articulos where codigo_articulo=;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombre,precio,descripcion,imagen,activo from articulos where codigo_articulo=;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombre,precio,descripcion,imagen,activo from articulos where codigo_articulo=;')
+ 4 APPPATH\Models\modelo.php(83): CodeIgniter\Database\BaseConnection->query('SELECT nombre,precio,descripcion,imagen,activo from articulos where codigo_articulo=;')
+ 5 APPPATH\Controllers\Home.php(101): App\Models\Modelo->datosProducto(null)
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 06:55:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(101): CodeIgniter\Model->__call('modificarProducto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-11 06:55:55 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(101): CodeIgniter\Model->__call('modificarProducto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-11 06:58:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'codigo_articulo=2' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE articulo...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE articulo...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE articulo...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(73): CodeIgniter\Database\BaseConnection->query('UPDATE articulo...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(101): App\Models\Modelo->modificarProducto('2', 'Torre eiffel', 'LA torre Eiffel', '12', '1')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-11 06:58:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'codigo_articulo=2' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE articulos SET nombre=\'Torre eiffel\', precio=12, descripcion=\'LA torre Eiffel\', activo=1where codigo_articulo=2;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE articulos SET nombre=\'Torre eiffel\', precio=12, descripcion=\'LA torre Eiffel\', activo=1where codigo_articulo=2;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE articulos SET nombre=\'Torre eiffel\', precio=12, descripcion=\'LA torre Eiffel\', activo=1where codigo_articulo=2;')
+ 4 APPPATH\Models\modelo.php(73): CodeIgniter\Database\BaseConnection->query('UPDATE articulos SET nombre=\'Torre eiffel\', precio=12, descripcion=\'LA torre Eiffel\', activo=1where codigo_articulo=2;')
+ 5 APPPATH\Controllers\Home.php(101): App\Models\Modelo->modificarProducto('2', 'Torre eiffel', 'LA torre Eiffel', '12', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,8 @@
+CRITICAL - 2022-12-21 06:55:41 --> Undefined variable $us
+in APPPATH\Models\modelo.php on line 28.
+ 1 APPPATH\Models\modelo.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $us', 'APPPATH\\Models\\modelo.php', 28)
+ 2 APPPATH\Controllers\Home.php(33): App\Models\Modelo->dimeOfertasMensaje('ruby')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

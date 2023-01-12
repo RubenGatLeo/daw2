@@ -1,0 +1,337 @@
+CRITICAL - 2023-01-10 05:44:28 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 61.
+ 1 APPPATH\Controllers\Home.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Home.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 05:45:20 --> Call to undefined function App\Controllers\anadirArticulo()
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 05:57:25 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Home.php on line 74.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 05:57:35 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Home.php on line 74.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 05:58:14 --> Undefined array key "imagen"
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:00:32 --> Undefined array key "imagen"
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:02:28 --> Too few arguments to function App\Models\Modelo::anadirArticulo(), 5 passed in C:\xampp\htdocs\terceraMano\app\Controllers\Home.php on line 67 and exactly 6 expected
+in APPPATH\Models\modelo.php on line 57.
+ 1 APPPATH\Controllers\Home.php(67): App\Models\Modelo->anadirArticulo('2', '1', '25', 'sad', '684645464')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:05:12 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Views\\vista1.php', 28)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Views\\vista1.php', 28)
+ 3 APPPATH\Views\vista1.php(28): base64_encode(null)
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 7 APPPATH\Controllers\Home.php(16): view('vista1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:05:28 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Views\\vista1.php', 28)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Views\\vista1.php', 28)
+ 3 APPPATH\Views\vista1.php(28): base64_encode(null)
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 7 APPPATH\Controllers\Home.php(16): view('vista1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:05:33 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Views\\vista1.php', 28)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Views\\vista1.php', 28)
+ 3 APPPATH\Views\vista1.php(28): base64_encode(null)
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 7 APPPATH\Controllers\Home.php(16): view('vista1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:13:28 --> copy(descarga.jfif): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(descarga.jfif): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 APPPATH\Controllers\Home.php(67): copy('descarga.jfif', 'c:/tmp/imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:15:00 --> copy(obras2.gif): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(obras2.gif): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 APPPATH\Controllers\Home.php(67): copy('obras2.gif', 'c:/tmp/imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:17:27 --> copy(descarga.jfif): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(descarga.jfif): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 APPPATH\Controllers\Home.php(67): copy('descarga.jfif', 'c:/tmp/imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:18:09 --> copy(descarga.jfif): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(descarga.jfif): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 APPPATH\Controllers\Home.php(67): copy('descarga.jfif', '../../tmp/imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:19:46 --> Undefined array key "imagen"
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:22:32 --> Undefined array key "imagen"
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:25:03 --> copy(../../tmp/imagen.jpg): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(../../tmp/imagen.jpg): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 APPPATH\Controllers\Home.php(67): copy('C:\\xampp\\tmp\\php8764.tmp', '../../tmp/imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:26:02 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'copy(): Passing null to parameter #1 ($from) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'copy(): Passing null to parameter #1 ($from) of type string is deprecated', 'APPPATH\\Controllers\\Home.php', 67)
+ 3 APPPATH\Controllers\Home.php(67): copy(null, '../../tmp/imagen.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:29:33 --> copy(../../tmp/imagen.jpg): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 67.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(../../tmp/imagen.jpg): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 APPPATH\Controllers\Home.php(67): copy('C:\\xampp\\tmp\\phpA328.tmp', '../../tmp/imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:30:50 --> syntax error, unexpected identifier "copy"
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:31:10 --> syntax error, unexpected identifier "copy"
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:31:12 --> syntax error, unexpected identifier "copy"
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:31:14 --> syntax error, unexpected identifier "copy"
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:31:17 --> syntax error, unexpected identifier "copy"
+in APPPATH\Controllers\Home.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:34:21 --> Call to undefined function App\Controllers\vista3()
+in APPPATH\Controllers\Home.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:35:39 --> Call to undefined function App\Controllers\vista3()
+in APPPATH\Controllers\Home.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 06:41:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Gato' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(40): App\Models\Modelo->queVende('Ruben Gato ')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 06:41:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Gato' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;')
+ 4 APPPATH\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;')
+ 5 APPPATH\Controllers\Home.php(40): App\Models\Modelo->queVende('Ruben Gato ')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 06:42:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Gato' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(40): App\Models\Modelo->queVende('Ruben Gato ')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 06:42:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Gato' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;')
+ 4 APPPATH\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,precio,ofertado where cod_usuario=Ruben Gato ;')
+ 5 APPPATH\Controllers\Home.php(40): App\Models\Modelo->queVende('Ruben Gato ')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 06:44:27 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(40): App\Models\Modelo->queVende('2')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 06:44:27 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,precio,ofertado where cod_usuario=2;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,precio,ofertado where cod_usuario=2;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,precio,ofertado where cod_usuario=2;')
+ 4 APPPATH\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,precio,ofertado where cod_usuario=2;')
+ 5 APPPATH\Controllers\Home.php(40): App\Models\Modelo->queVende('2')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:45:06 --> Undefined variable $misArticulos
+in APPPATH\Views\vista3.php on line 27.
+ 1 APPPATH\Views\vista3.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $misArticulos', 'APPPATH\\Views\\vista3.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista3.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista3', [], true)
+ 5 APPPATH\Controllers\Home.php(41): view('vista3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:45:41 --> Undefined variable $maleta
+in APPPATH\Controllers\Home.php on line 72.
+ 1 APPPATH\Controllers\Home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $maleta', 'APPPATH\\Controllers\\Home.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 06:46:22 --> Undefined variable $user
+in APPPATH\Controllers\Home.php on line 81.
+ 1 APPPATH\Controllers\Home.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Controllers\\Home.php', 81)
+ 2 APPPATH\Controllers\Home.php(73): App\Controllers\Home->vista3([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-10 06:52:00 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(40): App\Models\Modelo->queVende('2')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-10 06:52:01 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  nombre,precio,ofertado where cod_usuario=2;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  nombre,precio,ofertado where cod_usuario=2;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  nombre,precio,ofertado where cod_usuario=2;')
+ 4 APPPATH\Models\modelo.php(68): CodeIgniter\Database\BaseConnection->query('SELECT  nombre,precio,ofertado where cod_usuario=2;')
+ 5 APPPATH\Controllers\Home.php(40): App\Models\Modelo->queVende('2')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->iniciaSesion()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
