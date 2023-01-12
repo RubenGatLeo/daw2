@@ -112,6 +112,7 @@ class Home extends BaseController{
 
         return view("vista4",$maleta);
     }
+    //Funcion para cuando se envia un nuevo mensaje 
     public function nuevoMensaje(){
         $user=session()->get("codUsu");
         $articulo=$this->request->getPost("articulo");
