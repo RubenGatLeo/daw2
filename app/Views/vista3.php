@@ -22,7 +22,6 @@
 
         echo "<table><tr><th>Mis articulos</th><th>Nuevo articulo</th><th>Estoy interesado</th></tr>";
         echo "</tr><td>";
-        // FALTA un Bucle para ver los articulos que tenga el usuario que vendra de una variable desde home UTILIZAR LA SESION
         foreach ($misArticulos as $registro) {
             //Voy a NECESITAR el codigo del articulo y QUE ME MANDE a modificar articulo
             echo "<li><a href='".base_url()."/infoProducto?cod=".$registro["codigo_articulo"]."'>".$registro["nombre"].".Precio:".$registro["precio"]."€.Ofertado el ".$registro["ofertado"]."</a></li>";
