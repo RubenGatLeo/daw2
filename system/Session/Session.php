@@ -58,7 +58,7 @@ class Session implements SessionInterface
      *
      * @var int
      */
-    protected $sessionExpiration =0;//Estaba en 7200
+    protected $sessionExpiration =0;//Estaba en 7200;
 
     /**
      * The location to save sessions to, driver dependent..

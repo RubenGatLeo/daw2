@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tercera mano</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='<?php echo base_url();?>/css/estilos.css'>
     <script src='main.js'></script>
     <style>
         *{
@@ -13,7 +13,7 @@
         }
         .productos{
             display:flex;
-            width:30%;
+            width:25%;
             float:left;
             border:1px solid black;
             margin-left:5%;
@@ -42,10 +42,12 @@
     //Falta opcion de elegir la categoria con un dropdown
     helper("form");
     echo form_open("/filtrarCategoria");
-    echo form_dropdown("categorias",$categorias);
+    $datos1=array("name"=>"categorias","onchange"=>"this.form.submit()");
+    echo form_dropdown($datos1,$categorias);
     echo form_close();
     echo "<hr>";
     //Tabla con los articulos  contiene la referencia, el articulo, la descripcion el precio y la imagen 
+    echo "<div class=general>";
     foreach ($articulos as $indice) {
     echo "<div class=productos>";
           // Ir mostrando cada dato
@@ -54,20 +56,7 @@
         echo "<tr><td>".$indice["descripcion"]."</td></tr></table>";
         echo "</div>";
      }
-    
-    // echo "<table border=1 width=100%><tr><td>REF</td><td>Articulo</td><td>Precio</td><td>Descripcion</td><td>Imagen</td></tr>";
-    // foreach ($articulos as $indice) {
-    //    echo "<tr>";
-    //      // Ir mostrando cada dato
-    //    echo "<td>#".$indice["codigo_articulo"]."</td>";
-    //    echo "<td>".$indice["nombre"]."</td>";
-    //    echo "<td>".$indice["precio"]."€</td>";
-    //    echo "<td>".$indice["descripcion"]."</td>";
-    //    echo "<td><img width=120 height=100 src='data:image/jpeg;base64,".base64_encode($indice["imagen"])."'></td>";
-    //    echo "</tr>";
-    // }
-    // echo "</table>";
-    
+    echo "</div>";    
     ?>
 </body>
 </html>

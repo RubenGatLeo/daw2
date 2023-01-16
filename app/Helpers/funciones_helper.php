@@ -7,7 +7,7 @@ function paraOfertas($m){
     return $s;
 }
 function categorias($m){
-    $s["0"]="Seleccione la categoria del producto";
+    $s["0"]="Todas las categorias";
     foreach ($m as $registro) {
         $s[$registro["cod_categoria"]]=$registro["categoria"];
     }

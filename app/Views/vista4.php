@@ -20,15 +20,15 @@
         echo "<hr>";
 
         //Crear una tabla con la informacion del artiuclo a modificar y los mensajes recibidos
-        echo "<table style=float:left><thead><tr><th>Modificar Articulo</th></tr></thead><tr>";
+        echo "<table style=float:left;text-align:center><thead><tr><th>Modificar Articulo</th></tr></thead><tr>";
         //Formulario con la informacion del articulo
         echo form_open_multipart("/modificarProducto");
         //foreach e ir creando cada fila de la tabla con cada tipo de campo de formulario 
         foreach ($info as $campo) {
-            echo "<td><img width=120 height=100 src='data:image/jpeg;base64,".base64_encode($campo["imagen"])."'>";
+            echo "<td><img width=150 height=150 src='data:image/jpeg;base64,".base64_encode($campo["imagen"])."'>";
             $datos1=array("name"=>"titulo","value"=>$campo["nombre"]);
             echo  "<br>".form_input($datos1);
-            $datos2=array("name"=>"descripcion","value"=>$campo["descripcion"]);
+            $datos2=array("name"=>"descripcion","value"=>$campo["descripcion"],"rows"=>8,"cols"=>20);
             echo "<br>".form_textArea($datos2);
             $datos3=array("name"=>"precio","value"=>$campo["precio"]);
             echo "<br><label for=precio>Precio</label>".form_input($datos3);

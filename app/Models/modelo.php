@@ -47,9 +47,15 @@ class Modelo extends Model{
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
-    //Funcion que devuelva los datos de todos los productos
+    //Funcion que devuelva los datos de todos los productos en venta
     function articulosEnVenta(){
         $orden="SELECT * from articulos where activo=1";
+        $resultado=$this->db->query($orden);
+        return $resultado->getResultArray();
+    }
+    //Funcion que devuelva los datos de los productos en venta de una categoria concreta
+    function articulosPorCategoria($categoria){
+        $orden="SELECT * from articulos where activo=1 and categoria=".$categoria.";";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }

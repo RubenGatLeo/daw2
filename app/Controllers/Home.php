@@ -18,16 +18,28 @@ class Home extends BaseController{
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
         return view('vista1',$maleta);
     }
-    // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
+    //Funcion para mostrar los productos de una categoria en concreto
+    public function filtrarCategorias(){
+        helper("funciones");
+        $categoria=$this->request->getPost("categorias");
+        if($categoria==0){
+            $maleta["articulos"]= $this->modelo->articulosEnVenta();
+        }else{
+            $maleta["articulos"]= $this->modelo->articulosPorCategoria($categoria);
+        }
+        $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
+        return view('vista1',$maleta);
+    }
     public function login(){
         // if(session()->has("codUsu")){
-        //     $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        //     $this->verVista3($maleta);
-        //     }else{
-        //         session()->remove("codUsu");
+            //     $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+            //     $this->verVista3($maleta);
+            //     }else{
+                //         session()->remove("codUsu");
                 return view("vista2");
-        // }
-    }
+                // }
+            }
+    // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
     public function iniciaSesion(){
         //Recojo los valores 
         $user=$this->request->getPost("user");
