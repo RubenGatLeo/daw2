@@ -34,11 +34,11 @@ class Home extends BaseController{
         // if(session()->has("codUsu")){
             //     $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
             //     $this->verVista3($maleta);
-            //     }else{
-                //         session()->remove("codUsu");
+      //}else{
+                //session()->remove("codUsu");
                 return view("vista2");
-                // }
-            }
+     // }
+    }
     // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
     public function iniciaSesion(){
         //Recojo los valores 
@@ -86,6 +86,7 @@ class Home extends BaseController{
         $titulo=$this->request->getPost("titulo");
         $datos=$this->request->getPost("datos");
         $file=$this->request->getFile("imagen");
+    
         copy($file->getTempName(),"c:/tmp/imagen.jpg");
         $this->modelo->anadirArticulo($user,$categoria,$precio,$titulo,$datos);
 

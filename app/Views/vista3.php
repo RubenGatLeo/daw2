@@ -25,7 +25,7 @@
         foreach ($misArticulos as $registro) {
             //Voy a NECESITAR el codigo del articulo y QUE ME MANDE a modificar articulo
             echo "<li><a href='".base_url()."/infoProducto?cod=".$registro["codigo_articulo"]."'>".$registro["nombre"].".Precio:".$registro["precio"]."€.Ofertado el ".$registro["ofertado"]."</a></li>";
-         }
+        }
 
 
         echo "</td><td>";
