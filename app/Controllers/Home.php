@@ -12,22 +12,22 @@ class Home extends BaseController{
         $this->modelo=new Modelo();
     }
     public function index(){
-        $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        // $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
         helper("funciones");
         $maleta["articulos"]= $this->modelo->articulosEnVenta();
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
         return view('vista1',$maleta);
     }
+    // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
     public function login(){
-        // if(session()->get("codUsu")!=""){
+        // if(session()->has("codUsu")){
         //     $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
         //     $this->verVista3($maleta);
-        // }else{
-
-            return view("vista2");
+        //     }else{
+        //         session()->remove("codUsu");
+                return view("vista2");
         // }
     }
-    //Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
     public function iniciaSesion(){
         //Recojo los valores 
         $user=$this->request->getPost("user");

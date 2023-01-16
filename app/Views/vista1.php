@@ -32,12 +32,12 @@
     <?php
     //Enlace a la zona de usuarios
     //Colocarlo a la derecha dar opcion de cerrar sesion 
-    if($usuario!=""){
-        echo "<h5>Usuario: ".$usuario."</h5>";
-    }else{
-        echo "<h5>Usuario anónimo </h5>";
+    // if($usuario!=""){
+    //     echo "<h5>Usuario: ".$usuario."</h5>";
+    // }else{
+    //     echo "<h5>Usuario anónimo </h5>";
 
-    } 
+    // } 
     echo "<a href=".base_url()."/login>Entrar en la zona de socios</a>";
     //Falta opcion de elegir la categoria con un dropdown
     helper("form");

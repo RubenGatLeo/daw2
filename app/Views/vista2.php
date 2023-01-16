@@ -14,7 +14,6 @@
                 <h1>Identificarse</h1>
                 </div>
             <?php
-            
             echo "<a href=".base_url().">SALIR</a>";
             echo "<hr>";
             //Esta libreria se encarga de crear formularios
