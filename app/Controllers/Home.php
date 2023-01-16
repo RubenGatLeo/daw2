@@ -86,7 +86,7 @@ class Home extends BaseController{
         $titulo=$this->request->getPost("titulo");
         $datos=$this->request->getPost("datos");
         $file=$this->request->getFile("imagen");
-    
+
         copy($file->getTempName(),"c:/tmp/imagen.jpg");
         $this->modelo->anadirArticulo($user,$categoria,$precio,$titulo,$datos);
 
