@@ -1,0 +1,175 @@
+ERROR - 2023-01-17 05:45:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(104): App\Models\Modelo->queVende(NULL)
+#5 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(65): App\Controllers\Home->verVista3(Array)
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-17 05:45:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 4 APPPATH\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 5 APPPATH\Controllers\Home.php(104): App\Models\Modelo->queVende(null)
+ 6 APPPATH\Controllers\Home.php(65): App\Controllers\Home->verVista3([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-17 05:45:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(104): App\Models\Modelo->queVende(NULL)
+#5 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(65): App\Controllers\Home->verVista3(Array)
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-17 05:45:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 4 APPPATH\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 5 APPPATH\Controllers\Home.php(104): App\Models\Modelo->queVende(null)
+ 6 APPPATH\Controllers\Home.php(65): App\Controllers\Home->verVista3([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-17 05:45:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(104): App\Models\Modelo->queVende(NULL)
+#5 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(65): App\Controllers\Home->verVista3(Array)
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-17 05:45:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 4 APPPATH\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 5 APPPATH\Controllers\Home.php(104): App\Models\Modelo->queVende(null)
+ 6 APPPATH\Controllers\Home.php(65): App\Controllers\Home->verVista3([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-17 05:45:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(104): App\Models\Modelo->queVende(NULL)
+#5 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(65): App\Controllers\Home->verVista3(Array)
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-17 05:45:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by ofertado desc' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 4 APPPATH\Models\modelo.php(84): CodeIgniter\Database\BaseConnection->query('SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario= order by ofertado desc;')
+ 5 APPPATH\Controllers\Home.php(104): App\Models\Modelo->queVende(null)
+ 6 APPPATH\Controllers\Home.php(65): App\Controllers\Home->verVista3([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->compruebaUsu()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-17 05:56:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`tercera_mano`.`mensajes`, CONSTRAINT `mensajes_ibfk_2` FOREIGN KEY (`cod_articulo`) REFERENCES `articulos` (`codigo_articulo`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT into men...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT into men...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT into men...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(96): CodeIgniter\Database\BaseConnection->query('INSERT into men...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(141): App\Models\Modelo->enviarMensaje('2', '0', '8778787')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->nuevoMensaje()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-17 05:56:01 --> Cannot add or update a child row: a foreign key constraint fails (`tercera_mano`.`mensajes`, CONSTRAINT `mensajes_ibfk_2` FOREIGN KEY (`cod_articulo`) REFERENCES `articulos` (`codigo_articulo`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT into mensajes(cod_usuario,cod_articulo,mensaje) values (\'2\',\'0\',\'8778787\');', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT into mensajes(cod_usuario,cod_articulo,mensaje) values (\'2\',\'0\',\'8778787\');')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT into mensajes(cod_usuario,cod_articulo,mensaje) values (\'2\',\'0\',\'8778787\');')
+ 4 APPPATH\Models\modelo.php(96): CodeIgniter\Database\BaseConnection->query('INSERT into mensajes(cod_usuario,cod_articulo,mensaje) values (\'2\',\'0\',\'8778787\');')
+ 5 APPPATH\Controllers\Home.php(141): App\Models\Modelo->enviarMensaje('2', '0', '8778787')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-17 06:07:46 --> Path cannot be empty
+in APPPATH\Controllers\Home.php on line 90.
+ 1 APPPATH\Controllers\Home.php(90): copy('ROOTPATH\\public', 'C:\\tmp\\imagen.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-17 06:11:17 --> Path cannot be empty
+in APPPATH\Controllers\Home.php on line 95.
+ 1 APPPATH\Controllers\Home.php(95): copy('ROOTPATH\\public', 'C:\\tmp\\imagen.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-17 06:14:03 --> Path cannot be empty
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): copy('ROOTPATH\\public', 'C:\\tmp\\imagen.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-17 06:17:17 --> copy(c:/tmp/vacio.jpg): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(c:/tmp/vacio.jpg): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 95)
+ 2 APPPATH\Controllers\Home.php(95): copy('c:/tmp/vacio.jpg', 'C:\\tmp\\imagen.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->nuevoArticulo()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-17 06:32:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '56, descripcion='No vendo nada no sigas mirando', activo=1 where codigo_artic...' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE articulo...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE articulo...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE articulo...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(79): CodeIgniter\Database\BaseConnection->query('UPDATE articulo...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(135): App\Models\Modelo->modificarProducto('16', 'Nada', 'No vendo nada n...', '1,56', '1')
+#5 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-17 06:32:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '56, descripcion='No vendo nada no sigas mirando', activo=1 where codigo_artic...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE articulos SET nombre=\'Nada\', precio=1,56, descripcion=\'No vendo nada no sigas mirando\', activo=1 where codigo_articulo=16;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE articulos SET nombre=\'Nada\', precio=1,56, descripcion=\'No vendo nada no sigas mirando\', activo=1 where codigo_articulo=16;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE articulos SET nombre=\'Nada\', precio=1,56, descripcion=\'No vendo nada no sigas mirando\', activo=1 where codigo_articulo=16;')
+ 4 APPPATH\Models\modelo.php(79): CodeIgniter\Database\BaseConnection->query('UPDATE articulos SET nombre=\'Nada\', precio=1,56, descripcion=\'No vendo nada no sigas mirando\', activo=1 where codigo_articulo=16;')
+ 5 APPPATH\Controllers\Home.php(135): App\Models\Modelo->modificarProducto('16', 'Nada', 'No vendo nada no sigas mirando', '1,56', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->modificarProducto()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

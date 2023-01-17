@@ -82,16 +82,25 @@ class Home extends BaseController{
         $session=session();
         $user=$session->get("codUsu");
         $categoria=$this->request->getPost("categoria");
-        $precio=$this->request->getPost("precio");
-        $titulo=$this->request->getPost("titulo");
-        $datos=$this->request->getPost("datos");
-        $file=$this->request->getFile("imagen");
-
-        copy($file->getTempName(),"c:/tmp/imagen.jpg");
-        $this->modelo->anadirArticulo($user,$categoria,$precio,$titulo,$datos);
-
-        $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
-        $this->verVista3($maleta);
+        //Para evitar que el usuario no elija una categoria
+        if($categoria==0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
+            $this->verVista3($maleta);
+        }else{
+            $precio=$this->request->getPost("precio");
+            $titulo=$this->request->getPost("titulo");
+            $datos=$this->request->getPost("datos");
+            $file=$this->request->getFile("imagen");
+            if($file->getTempName()==null){
+                copy("c:/tmp/vacio.png","c:/tmp/imagen.jpg");
+            }else{
+                copy($file->getTempName(),"c:/tmp/imagen.jpg");
+            }
+            $this->modelo->anadirArticulo($user,$categoria,$precio,$titulo,$datos);
+                
+            $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
+            $this->verVista3($maleta);
+        }
         
         
     }
@@ -137,10 +146,14 @@ class Home extends BaseController{
         $user=session()->get("codUsu");
         $articulo=$this->request->getPost("articulo");
         $mensaje=$this->request->getPost("mensaje");
-
-        $this->modelo->enviarMensaje($user,$articulo,$mensaje);
-
-        $maleta["usuario"]=$this->modelo->nombreUsuario($user);
-        $this->verVista3($maleta);
+        if($articulo==0||$mensaje==""){
+            $maleta["usuario"]=$this->modelo->nombreUsuario($user);
+            $this->verVista3($maleta);
+        }else{
+            $this->modelo->enviarMensaje($user,$articulo,$mensaje);
+            
+            $maleta["usuario"]=$this->modelo->nombreUsuario($user);
+            $this->verVista3($maleta);
+        }
     }
 }

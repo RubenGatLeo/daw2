@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+table{
+   display: inline;
+   text-align: left;
+}
+thead{
+    text-align: center;
+}

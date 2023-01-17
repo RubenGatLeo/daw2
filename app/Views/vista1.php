@@ -51,7 +51,7 @@
         foreach ($articulos as $indice) {
         echo "<div class=productos>";
             // Ir mostrando cada dato
-            echo "<a href=''><img width=100% height=100 src='data:image/jpeg;base64,".base64_encode($indice["imagen"])."'></a>";
+            echo "<a href=''><img height=100 src='data:image/jpeg;base64,".base64_encode($indice["imagen"])."'></a>";
             echo "<table><thead><th>".$indice["nombre"]." ".$indice["precio"]."€</th></thead>";
             echo "<tr><td>".$indice["descripcion"]."</td></tr></table>";
             echo "</div>";

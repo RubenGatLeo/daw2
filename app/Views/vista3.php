@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tu informacion</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='<?php echo base_url();?>/css/estilos.css'>
     <script src='main.js'></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
         echo "<a href=".base_url().">SALIR</a>";
         echo "<hr>";
 
-        echo "<table><tr><th>Mis articulos</th><th>Nuevo articulo</th><th>Estoy interesado</th></tr>";
+        echo "<table><thead><tr><th>Mis articulos</th><th>Nuevo articulo</th><th>Estoy interesado</th></tr></thead>";
         echo "</tr><td>";
         foreach ($misArticulos as $registro) {
             //Voy a NECESITAR el codigo del articulo y QUE ME MANDE a modificar articulo
@@ -34,12 +34,11 @@
         //NECESITO un array con las categorias para generar un dropdown en el formulario 
         echo form_dropdown("categoria",$categorias)."<br>";
 
-
-        $datos1=array("name"=>"precio","placeholder"=>"Precio");
+        $datos1=array("name"=>"precio","placeholder"=>"Precio","required"=>"required");
         echo form_input($datos1);
-        $datos2=array("name"=>"titulo","placeholder"=>"titulo");
+        $datos2=array("name"=>"titulo","placeholder"=>"titulo","required"=>"required");
         echo  "<br>".form_input($datos2);
-        $datos3=array("name"=>"datos","placeholder"=>"Datos de la oferta");
+        $datos3=array("name"=>"datos","placeholder"=>"Datos de la oferta","required"=>"required");
         echo "<br>".form_textArea($datos3);
         //NECESITO un form_upload para cargar las imagenes
         echo "<br>".form_upload("imagen");
