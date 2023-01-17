@@ -49,7 +49,7 @@ class Modelo extends Model{
     }
     //Funcion que devuelva los datos de todos los productos en venta
     function articulosEnVenta(){
-        $orden="SELECT * from articulos where activo=1";
+        $orden="SELECT * from articulos where activo=1 order by codigo_articulo desc";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
