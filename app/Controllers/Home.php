@@ -12,7 +12,11 @@ class Home extends BaseController{
         $this->modelo=new Modelo();
     }
     public function index(){
-        // $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        if(session()->get("codUsu")>0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        }else{
+            $maleta["usuario"]="anonimo";
+        }
         helper("funciones");
         $maleta["articulos"]= $this->modelo->articulosEnVenta();
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
@@ -31,13 +35,12 @@ class Home extends BaseController{
         return view('vista1',$maleta);
     }
     public function login(){
-        // if(session()->has("codUsu")){
-            //     $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-            //     $this->verVista3($maleta);
-      //}else{
-                //session()->remove("codUsu");
+        if(session()->get("codUsu")>0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+            $this->verVista3($maleta);
+        }else{
                 return view("vista2");
-     // }
+        }
     }
     // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
     public function iniciaSesion(){
@@ -51,11 +54,9 @@ class Home extends BaseController{
         if($respuesta== "malo"){
             return view("vista2");
         }else{
-            //Sesion con codigo de usuario FUNCIONA 
-            
-            $session=session();
-            $session->set("codUsu",$respuesta);
-            $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
+            //Sesion con codigo de usuario FUNCIONA             
+            session()->set("codUsu",$respuesta);
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
             $this->verVista3($maleta);
         }
     }

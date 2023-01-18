@@ -22,6 +22,16 @@
             border-radius:5px;
 
         }
+        .login{
+            position: absolute;
+            top:80px;
+            right:50px
+        }
+        .user{
+            position: absolute;
+            top:80px;
+            left:50px;
+        }
     </style>
 </head>
 <body>
@@ -32,19 +42,15 @@
     <?php
         //Enlace a la zona de usuarios
         //Colocarlo a la derecha dar opcion de cerrar sesion 
-        // if($usuario!=""){
-        //     echo "<h5>Usuario: ".$usuario."</h5>";
-        // }else{
-        //     echo "<h5>Usuario anónimo </h5>";
-
-        // } 
-        echo "<a href=".base_url()."/login>Entrar en la zona de socios</a>";
+        echo "<a class=user>Usuario: ".$usuario."</a>";
+        echo "<a href=".base_url()."/login class=login>Entrar en la zona de socios</a>";
         //Falta opcion de elegir la categoria con un dropdown
         helper("form");
         echo form_open("/filtrarCategoria");
         $datos1=array("name"=>"categorias","onchange"=>"this.form.submit()");
         echo form_dropdown($datos1,$categorias);
         echo form_close();
+        
         echo "<hr>";
         //Tabla con los articulos  contiene la referencia, el articulo, la descripcion el precio y la imagen 
         echo "<div class=general>";
