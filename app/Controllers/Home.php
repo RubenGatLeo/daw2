@@ -10,6 +10,7 @@ class Home extends BaseController{
     //Constructor
     public function __construct(){
         $this->modelo=new Modelo();
+        
     }
     public function index(){
         if(session()->get("codUsu")>0){
@@ -24,6 +25,13 @@ class Home extends BaseController{
     }
     //Funcion para mostrar los productos de una categoria en concreto
     public function filtrarCategorias(){
+
+        if(session()->get("codUsu")>0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        }else{
+            
+            $maleta["usuario"]="anonimo";
+        }
         helper("funciones");
         $categoria=$this->request->getPost("categorias");
         if($categoria==0){
@@ -39,7 +47,8 @@ class Home extends BaseController{
             $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
             $this->verVista3($maleta);
         }else{
-                return view("vista2");
+            session()->set("codUsu",0);
+            return view("vista2");
         }
     }
     // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
@@ -80,12 +89,12 @@ class Home extends BaseController{
     //Añade el articulo a la base de datos
     public function nuevoArticulo(){
         //Necesito recoger la categoria,precio,titulo,datos,archivo, y el user de sesion
-        $session=session();
-        $user=$session->get("codUsu");
+        
+        $user=session()->get("codUsu");
         $categoria=$this->request->getPost("categoria");
         //Para evitar que el usuario no elija una categoria
         if($categoria==0){
-            $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
             $this->verVista3($maleta);
         }else{
             $precio=$this->request->getPost("precio");
@@ -99,7 +108,7 @@ class Home extends BaseController{
             }
             $this->modelo->anadirArticulo($user,$categoria,$precio,$titulo,$datos);
                 
-            $maleta["usuario"]=$this->modelo->nombreUsuario($session->get("codUsu"));
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
             $this->verVista3($maleta);
         }
         
@@ -156,5 +165,10 @@ class Home extends BaseController{
             $maleta["usuario"]=$this->modelo->nombreUsuario($user);
             $this->verVista3($maleta);
         }
+    }
+    //Cierra la sesion de un usuario
+    public function cerrarSesion(){
+        session()->remove("codUsu");
+        echo $this->index();
     }
 }

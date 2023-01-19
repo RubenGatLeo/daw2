@@ -17,7 +17,9 @@
         //FUNCIONANDO -^ 
         echo "<h1>Usuario identificado: ".$usuario."</h1>";
         echo "</div>";
-        echo "<a href=".base_url().">SALIR</a>";
+        echo "<a href=".base_url().">Ver Productos</a>";
+
+        echo "<br><a href=".base_url()."/cerrarSesion>Cerrar Sesion</a>";
         echo "<hr>";
 
         echo "<table><thead><tr><th>Mis articulos</th><th>Nuevo articulo</th><th>Estoy interesado</th></tr></thead>";
