@@ -9,13 +9,18 @@ class Home extends BaseController{
 
     //Constructor
     public function __construct(){
-        $this->modelo=new Modelo();
-        
+        $this->modelo=new Modelo();    
     }
     public function index(){
-        if(session()->get("codUsu")>0){
-            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        }else{
+        //ESTO NI FUNCIONA NI FUNCIONARA PERO POR TENERLO AQUI NO ESTA MAL 
+        // helper("pagination");
+        // $data=[
+        //     "productos"=>pagination(4),
+        //     "page"=>$pager
+        // ];
+        $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        if($maleta["usuario"]==""){
+            session()->set("codUsu",0);
             $maleta["usuario"]="anonimo";
         }
         helper("funciones");
@@ -25,11 +30,8 @@ class Home extends BaseController{
     }
     //Funcion para mostrar los productos de una categoria en concreto
     public function filtrarCategorias(){
-
-        if(session()->get("codUsu")>0){
-            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        }else{
-            
+        $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        if($maleta["usuario"]==""){
             $maleta["usuario"]="anonimo";
         }
         helper("funciones");
@@ -43,12 +45,11 @@ class Home extends BaseController{
         return view('vista1',$maleta);
     }
     public function login(){
-        if(session()->get("codUsu")>0){
-            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-            $this->verVista3($maleta);
+        $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        if($maleta["usuario"]==""){
+            return view("vista2"); 
         }else{
-            session()->set("codUsu",0);
-            return view("vista2");
+            $this->verVista3($maleta);
         }
     }
     // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
