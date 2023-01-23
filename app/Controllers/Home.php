@@ -18,8 +18,9 @@ class Home extends BaseController{
         //     "productos"=>pagination(4),
         //     "page"=>$pager
         // ];
-        $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        if($maleta["usuario"]==""){
+        if(session()->get("codUsu")>0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        }else{
             session()->set("codUsu",0);
             $maleta["usuario"]="anonimo";
         }
@@ -30,8 +31,10 @@ class Home extends BaseController{
     }
     //Funcion para mostrar los productos de una categoria en concreto
     public function filtrarCategorias(){
-        $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        if($maleta["usuario"]==""){
+        if(session()->get("codUsu")>0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        }else{
+            session()->set("codUsu",0);
             $maleta["usuario"]="anonimo";
         }
         helper("funciones");
