@@ -104,8 +104,8 @@ class Home extends BaseController{
             $precio=$this->request->getPost("precio");
             $titulo=$this->request->getPost("titulo");
             $datos=$this->request->getPost("datos");
-            $file=$this->request->getFile("imagen");
-            if($file->getTempName()==null){
+            $file=$this->request->getFile("imagen");         
+            if($file->getTempName()==null || $file->getMimeType()!="image/jpg"){
                 copy("c:/tmp/vacio.png","c:/tmp/imagen.jpg");
             }else{
                 copy($file->getTempName(),"c:/tmp/imagen.jpg");
