@@ -17,7 +17,7 @@
                 <?php
                     helper("form");
                     $datos=["id"=>"login"];
-                    echo form_open("/inicioUsuario",$datos);?>
+                    echo form_open("/creaUsuario",$datos);?>
                     <!--   con = Container  for items in the form-->
                     <div class="con">
                     <!--     Start  header Content  -->
@@ -37,6 +37,8 @@
                         <!--   user name Input-->
                         <!-- <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required> -->
                         <?php
+                            $datos1=array("name"=>"nombre","placeholder"=>"Introduce tu nombre y apellidos","class"=>"form-input","id"=>"txt-input");
+                            echo form_input($datos1)."<br><br><br>";
                             $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario","class"=>"form-input","id"=>"txt-input");
                             echo form_input($datos1)."<br><br><br>";
                         ?>
@@ -71,11 +73,7 @@
                     <div class="other">
                         <!--      Forgot Password button-->
                         <button class="btn submits frgt-pass">Forgot Password</button>
-                        <!--     Sign Up button -->
-                        
-                        <button class="btn submits sign-up" name="boton" value="registrate">Registrate
-                            <!--         Sign Up font icon -->
-                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                       
                             <!--      End Other the Division -->
                         </button>
                     </div>

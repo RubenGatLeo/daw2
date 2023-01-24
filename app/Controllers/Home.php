@@ -57,20 +57,28 @@ class Home extends BaseController{
     }
     // Comprueba si existe el usuario y si es asi mostrara vista3 si no mostrara vista2
     public function iniciaSesion(){
-        //Recojo los valores 
-        $user=$this->request->getPost("user");
-        $contra=$this->request->getPost("contrasena");
-        
-
-        //Compruebo si existe el usuario
-        $respuesta=$this->modelo->existeUsuario($user,$contra);
-        if($respuesta== "malo"){
-            return view("vista2");
+        //comprobar que boton viene
+        $boton=$this->request->getPost("boton");
+        if($boton=="registrate"){
+            return view("registerView");
         }else{
-            //Sesion con codigo de usuario FUNCIONA             
-            session()->set("codUsu",$respuesta);
-            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-            $this->verVista3($maleta);
+
+            
+            //Recojo los valores 
+            $user=$this->request->getPost("user");
+            $contra=$this->request->getPost("contrasena");
+            
+            
+            //Compruebo si existe el usuario
+            $respuesta=$this->modelo->existeUsuario($user,$contra);
+            if($respuesta== "malo"){
+                return view("vista2");
+            }else{
+                //Sesion con codigo de usuario FUNCIONA             
+                session()->set("codUsu",$respuesta);
+                $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+                $this->verVista3($maleta);
+            }
         }
     }
     //Comprueba cual es el usuario que esta en sesion y le inicia sesion directamente
