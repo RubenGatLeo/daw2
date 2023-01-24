@@ -7,32 +7,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='<?php echo base_url();?>/css/estilos.css'>
     <script src='<?php echo base_url();?>/js/main.js'></script>
-    <style>
-        *{
-            box-sizing:border-box;
-        }
-        .productos{
-            display:flex;
-            width:25%;
-            float:left;
-            border:1px solid black;
-            margin-left:5%;
-            margin-top:1%;
-            padding:10px;
-            border-radius:5px;
-
-        }
-        .login{
-            position: absolute;
-            top:80px;
-            right:50px
-        }
-        .user{
-            position: absolute;
-            top:80px;
-            left:50px;
-        }
-    </style>
 </head>
 <body>
     <div id=cabecera>
