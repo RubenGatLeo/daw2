@@ -21,9 +21,9 @@
                 echo "<div id=login>";
                 echo "<h2>Inicia sesion</h2>";
                 echo form_open("/inicioUsuario");
-                $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario");
+                $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario","required"=>"required");
                 echo form_input($datos1)."<br><br><br>";
-                $datos2=array("name"=>"contrasena","placeholder"=>"Pon tu contraseña por favor");
+                $datos2=array("name"=>"contrasena","placeholder"=>"Pon tu contraseña por favor","required"=>"required");
                 echo form_password($datos2)."<br><br><br>";
                 echo form_submit("boton","Inicia sesion");
                 echo form_close();
@@ -32,7 +32,7 @@
                 echo "<h2>Si es la primera vez que accedes aqui, create una cuenta rellenando el siguiente formulario</h2>";
 
                 echo form_open("/creaUsuario");
-                $datos3=array("name"=>"nombre","placeholder"=>"Introduce Nombre y Apellidos");
+                $datos3=array("name"=>"nombre","placeholder"=>"Introduce Nombre y Apellidos","required"=>"required");
                 echo form_input($datos3)."<br><br><br>";
                 echo form_input($datos1)."<br><br><br>";
                 echo form_password($datos2)."<br><br><br>";
