@@ -29,11 +29,6 @@
                     <!--     End  header Content  -->
                     <br>
                     <div class="field-set">
-
-                        <!--   user name -->
-                        <span class="input-item">
-                        <i class="fa fa-user-circle"></i>
-                        </span>
                         <!--   user name Input-->
                         <!-- <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required> -->
                         <?php
@@ -44,11 +39,6 @@
                         ?>
                         <br>
 
-                        <!--   Password -->
-
-                        <span class="input-item">
-                        <i class="fa fa-key"></i>
-                        </span>
                         <!--   Password Input-->
                         <!-- <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required> -->
                         
@@ -57,22 +47,13 @@
                           $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd","required"=>"required");
                           echo form_password($datos1)."<br><br><br>";
                         ?>
-
-                        <!--      Show/hide password  -->
-                        <!-- <span>
-                        <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
-                        </span> -->
-
                         <br>
                         <!--        buttons -->
                         <!--      button LogIn -->
                         <button name="boton" value="inicio" class="log-in" type="submit"> Inicia Sesion </button>
                     </div>
-
                     <!--   other buttons -->
                     <div class="other">
-                        <!--      Forgot Password button-->
-                        <!-- <button class="btn submits frgt-pass">Forgot Password</button> -->
                        
                             <!--      End Other the Division -->
                         </button>

@@ -22,7 +22,7 @@ body {
 
   font-family: "Vibur", cursive;
   /*   the main font */
-  font-family: "Abel", sans-serif;
+  font-family:"Abel", sans-serif;
   opacity: 0.95;
   /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
 }
@@ -221,11 +221,17 @@ thead{
 }
 .login{
     position: absolute;
-    top:30px;
+    top:160px;
     right:50px
 }
 .user{
     position: absolute;
-    top:30px;
+    top:160px;
     left:50px;
+}
+.logo{
+  margin-bottom: 15px;
+}
+.logo > h1{
+display: inline;
 }

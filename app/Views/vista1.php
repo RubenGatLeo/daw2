@@ -11,7 +11,12 @@
 <body>
     <div id=cabecera>
         <!-- Imagen o Logotipo de la pagina-->
-        <h1>Articulos en venta</h1>
+        <div class="logo">
+            <h1>Tercera</h1>
+            <img src='<?php echo base_url();?>/img/2manos.png' class="logo" width=10%>
+            <h1>Mano</h1>
+        </div>
+        
     </div>
     <?php
         //Enlace a la zona de usuarios
@@ -24,14 +29,12 @@
         $datos1=array("name"=>"categorias","onchange"=>"this.form.submit()");
         echo form_dropdown($datos1,$categorias);
         echo form_close();
-        
-        echo "<hr>";
         //Tabla con los articulos  contiene la referencia, el articulo, la descripcion el precio y la imagen 
         echo "<div class=general>";
         foreach ($articulos as $indice) {
         echo "<div class=productos>";
             // Ir mostrando cada dato
-            echo "<a href=''><img height=100 src='data:image/jpeg;base64,".base64_encode($indice["imagen"])."'></a>";
+            echo "<a><img height=100 src='data:image/jpeg;base64,".base64_encode($indice["imagen"])."'></a>";
             echo "<table><thead><th>".$indice["nombre"]." ".$indice["precio"]."€</th></thead>";
             echo "<tr><td>".$indice["descripcion"]."</td></tr></table>";
             echo "</div>";

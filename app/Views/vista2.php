@@ -6,7 +6,7 @@
         <title> Login</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='<?php echo base_url();?>/css/estilos.css'>
-        <script src='main.js'></script>
+        
         </head>
         <body>
             <div id=cabecera>
@@ -29,11 +29,7 @@
                     <!--     End  header Content  -->
                     <br>
                     <div class="field-set">
-
                         <!--   user name -->
-                        <span class="input-item">
-                        <i class="fa fa-user-circle"></i>
-                        </span>
                         <!--   user name Input-->
                         <!-- <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required> -->
                         <?php
@@ -41,26 +37,12 @@
                             echo form_input($datos1)."<br><br><br>";
                         ?>
                         <br>
-
                         <!--   Password -->
-
-                        <span class="input-item">
-                        <i class="fa fa-key"></i>
-                        </span>
-                        <!--   Password Input-->
-                        <!-- <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required> -->
-                        
                         <?php
 
                           $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd");
                           echo form_password($datos1)."<br><br><br>";
                         ?>
-
-                        <!--      Show/hide password  -->
-                        <!-- <span>
-                        <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
-                        </span> -->
-
                         <br>
                         <!--        buttons -->
                         <!--      button LogIn -->
@@ -74,9 +56,7 @@
                         <!--     Sign Up button -->
                         
                         <button class="btn submits sign-up" name="boton" value="registrate">Registrate
-                            <!--         Sign Up font icon -->
-                            <i class="fa fa-user-plus" aria-hidden="true"></i>
-                            <!--      End Other the Division -->
+                        
                         </button>
                     </div>
                     <!-- End Form -->
@@ -89,6 +69,6 @@
                  
             </div>
 
-
+            <script src='main.js'></script>
    </body>
 </html>
