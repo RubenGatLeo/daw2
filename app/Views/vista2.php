@@ -57,9 +57,9 @@
                         ?>
 
                         <!--      Show/hide password  -->
-                        <span>
+                        <!-- <span>
                         <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
-                        </span>
+                        </span> -->
 
                         <br>
                         <!--        buttons -->
@@ -70,7 +70,7 @@
                     <!--   other buttons -->
                     <div class="other">
                         <!--      Forgot Password button-->
-                        <button class="btn submits frgt-pass">Forgot Password</button>
+                        <button class="btn submits frgt-pass" type=button>Olvidé la contraseña</button>
                         <!--     Sign Up button -->
                         
                         <button class="btn submits sign-up" name="boton" value="registrate">Registrate

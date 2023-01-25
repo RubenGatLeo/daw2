@@ -22,9 +22,9 @@
                     <div class="con">
                     <!--     Start  header Content  -->
                     <header class="head-form">
-                        <h2>Log in</h2>
+                        <h2>Registrate</h2>
                         <!--     A welcome message or an explanation of the login form -->
-                        <p>Inicia sesion usando tu usuario y contraseña</p>
+                        <p>Registrate si eres un nuevo usuario</p>
                     </header>
                     <!--     End  header Content  -->
                     <br>
@@ -37,9 +37,9 @@
                         <!--   user name Input-->
                         <!-- <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required> -->
                         <?php
-                            $datos1=array("name"=>"nombre","placeholder"=>"Introduce tu nombre y apellidos","class"=>"form-input","id"=>"txt-input");
+                            $datos1=array("name"=>"nombre","placeholder"=>"Introduce tu nombre y apellidos","class"=>"form-input","id"=>"txt-input","required"=>"required");
                             echo form_input($datos1)."<br><br><br>";
-                            $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario","class"=>"form-input","id"=>"txt-input");
+                            $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario","class"=>"form-input","id"=>"txt-input","required"=>"required");
                             echo form_input($datos1)."<br><br><br>";
                         ?>
                         <br>
@@ -54,14 +54,14 @@
                         
                         <?php
 
-                          $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd");
+                          $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd","required"=>"required");
                           echo form_password($datos1)."<br><br><br>";
                         ?>
 
                         <!--      Show/hide password  -->
-                        <span>
+                        <!-- <span>
                         <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
-                        </span>
+                        </span> -->
 
                         <br>
                         <!--        buttons -->
@@ -72,7 +72,7 @@
                     <!--   other buttons -->
                     <div class="other">
                         <!--      Forgot Password button-->
-                        <button class="btn submits frgt-pass">Forgot Password</button>
+                        <!-- <button class="btn submits frgt-pass">Forgot Password</button> -->
                        
                             <!--      End Other the Division -->
                         </button>
