@@ -30,7 +30,6 @@
                     <br>
                     <div class="field-set">
                         <!--   user name Input-->
-                        <!-- <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required> -->
                         <?php
                             $datos1=array("name"=>"nombre","placeholder"=>"Introduce tu nombre y apellidos","class"=>"form-input","id"=>"txt-input","required"=>"required");
                             echo form_input($datos1)."<br><br><br>";
@@ -38,10 +37,6 @@
                             echo form_input($datos1)."<br><br><br>";
                         ?>
                         <br>
-
-                        <!--   Password Input-->
-                        <!-- <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required> -->
-                        
                         <?php
 
                           $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd","required"=>"required");
@@ -50,7 +45,7 @@
                         <br>
                         <!--        buttons -->
                         <!--      button LogIn -->
-                        <button name="boton" value="inicio" class="log-in" type="submit"> Inicia Sesion </button>
+                        <button name="boton" value="inicio" class="log-in" type="submit"> Registrarse </button>
                     </div>
                     <!--   other buttons -->
                     <div class="other">
