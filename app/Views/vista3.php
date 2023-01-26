@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Tu informacion</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='<?php echo base_url();?>/css/estilos.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <div id=cabecera>
-    <!-- Imagen o Logotipo de la pagina-->
-
     <?php
         //POSIBLEMENTE el usuario sea mejor meterlo en una sesion y asi no tener que reenviarlo cada vez
         //FUNCIONANDO -^ 
-        echo "<h1>Usuario identificado: ".$usuario."</h1>";
-        echo "</div>";
-        echo "<a href=".base_url().">Ver Productos</a>";
+         echo "<h3 class=user >Usuario identificado: ".$usuario."</h3>";
+        //  echo "<a href=".base_url().">Ver Productos</a>";
 
-        echo "<br><a href=".base_url()."/cerrarSesion>Cerrar Sesion</a>";
+        echo "<br><a href=".base_url()."/cerrarSesion class=login>Cerrar Sesion</a>";
         echo "<hr>";
 
         echo "<table><thead><tr><th>Mis articulos</th><th>Nuevo articulo</th><th>Estoy interesado</th></tr></thead>";

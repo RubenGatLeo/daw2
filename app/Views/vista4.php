@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'> 
-    <title>Tus productos</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='<?php echo base_url();?>/css/estilos.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <div id=cabecera>
-    <!-- Imagen o Logotipo de la pagina-->
-    </div>
     <?php
         helper("form");
-        echo "<h1>Usuario identificado: ".$usuario."</h1>";
-        echo "</div>";
-        echo "<a href='".base_url()."/inicioUsuario'>Volver</a>";
+        echo "<h3 class=user >Usuario identificado: ".$usuario."</h3>";
+        echo "<br><a href='".base_url()."/inicioUsuario' class=login >Volver</a>";
         echo "<hr>";
 
         //Crear una tabla con la informacion del artiuclo a modificar y los mensajes recibidos

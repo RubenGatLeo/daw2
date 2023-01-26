@@ -20,7 +20,6 @@
     </div>
     <?php
         //Enlace a la zona de usuarios
-        //Colocarlo a la derecha dar opcion de cerrar sesion 
         echo "<a class=user>Usuario: ".$usuario."</a>";
         echo "<a href=".base_url()."/login class=login>Entrar en la zona de socios</a>";
         //Falta opcion de elegir la categoria con un dropdown
@@ -39,7 +38,16 @@
             echo "<tr><td>".$indice["descripcion"]."</td></tr></table>";
             echo "</div>";
         }
-        echo "</div>";    
+        echo "</div>";
+        echo "<div class=pagina>";   
+        for ($i=0; $i < $paginas; $i++){ 
+            if($paginaSeleccionada==$i){
+                echo "<a href=".base_url()."/pagina?numPag=".$i." id=paginaActual>Página ".($i+1)."</a>";
+            }else{
+                echo "<a href=".base_url()."/pagina?numPag=".$i.">Página ".($i+1)."</a>";
+            }
+        } 
+        echo "</div>";
     ?>
 </body>
 </html>

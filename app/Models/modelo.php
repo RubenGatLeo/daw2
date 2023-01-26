@@ -48,14 +48,15 @@ class Modelo extends Model{
         return $resultado->getResultArray();
     }
     //Funcion que devuelva los datos de todos los productos en venta
-    function articulosEnVenta(){
-        $orden="SELECT * from articulos where activo=1 order by codigo_articulo desc";
+    function articulosEnVenta($n,$p){//Pasar por parametro el numero de pagina en el que esta y cuantos productos por pagina
+        $productoInicial=$n*$p;
+        $orden="SELECT * from articulos where activo=1 order by codigo_articulo desc LIMIT ".$productoInicial.",".$p.";";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
     //Funcion que devuelva los datos de los productos en venta de una categoria concreta
-    function articulosPorCategoria($categoria){
-        $orden="SELECT * from articulos where activo=1 and categoria=".$categoria.";";
+    function articulosPorCategoria($categoria){//Pasar por parametro la Categoria, el numero de pagina en el que esta y cuantos productos por pagina
+        $orden="SELECT * from articulos where activo=1 and categoria=".$categoria." order by codigo_articulo desc;";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
     }
@@ -102,6 +103,19 @@ class Modelo extends Model{
                 where cod_articulo=".$codArticulo." order by fecha desc;";
         $respuesta=$this->db->query($orden);
         return $respuesta->getResultArray();        
+    }
+    function cuantasPaginas($n,$categoria){
+        if($categoria==0){
+
+            $orden="SELECT count(*) as paginas FROM articulos where activo=1;";
+        }else{
+            $orden="SELECT count(*) as paginas FROM articulos where activo=1 and categoria=".$categoria.";";
+        }
+        $resultado=$this->db->query($orden);
+        if($fila=$resultado->getRow()){
+           $resultado=ceil($fila->paginas/$n);
+        }
+        return $resultado;
     }
 }
 

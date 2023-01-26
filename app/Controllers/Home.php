@@ -12,12 +12,11 @@ class Home extends BaseController{
         $this->modelo=new Modelo();    
     }
     public function index(){
-        //ESTO NI FUNCIONA NI FUNCIONARA PERO POR TENERLO AQUI NO ESTA MAL 
-        // helper("pagination");
-        // $data=[
-        //     "productos"=>pagination(4),
-        //     "page"=>$pager
-        // ];
+       //Paginacion prueba 
+       //Teniendo en cuenta 6 productos por paginas
+        $maleta["paginas"]=$this->modelo->cuantasPaginas(6,0);
+        $maleta["paginaSeleccionada"]=0;
+
         if(session()->get("codUsu")>0){
             $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
         }else{
@@ -25,7 +24,7 @@ class Home extends BaseController{
             $maleta["usuario"]="anonimo";
         }
         helper("funciones");
-        $maleta["articulos"]= $this->modelo->articulosEnVenta();
+        $maleta["articulos"]= $this->modelo->articulosEnVenta(0,6);
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
         return view('vista1',$maleta);
     }
@@ -40,8 +39,11 @@ class Home extends BaseController{
         helper("funciones");
         $categoria=$this->request->getPost("categorias");
         if($categoria==0){
-            $maleta["articulos"]= $this->modelo->articulosEnVenta();
+            $maleta["paginas"]=$this->modelo->cuantasPaginas(6,0);
+            $maleta["paginaSeleccionada"]=0;
+            $maleta["articulos"]= $this->modelo->articulosEnVenta(0,6);
         }else{
+            $maleta["paginas"]=0;
             $maleta["articulos"]= $this->modelo->articulosPorCategoria($categoria);
         }
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
@@ -50,7 +52,8 @@ class Home extends BaseController{
     public function login(){
         $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
         if($maleta["usuario"]==""){
-            return view("vista2"); 
+            $maleta["mensaje"]="";
+            return view("vista2",$maleta); 
         }else{
             $this->verVista3($maleta);
         }
@@ -72,7 +75,8 @@ class Home extends BaseController{
             //Compruebo si existe el usuario
             $respuesta=$this->modelo->existeUsuario($user,$contra);
             if($respuesta== "malo"){
-                return view("vista2");
+                $maleta["mensaje"]="El usuario o la contraseña son incorrectos";
+                return view("vista2",$maleta);
             }else{
                 //Sesion con codigo de usuario FUNCIONA             
                 session()->set("codUsu",$respuesta);
@@ -113,7 +117,7 @@ class Home extends BaseController{
             $titulo=$this->request->getPost("titulo");
             $datos=$this->request->getPost("datos");
             $file=$this->request->getFile("imagen");         
-            if($file->getTempName()==null || $file->getMimeType()!="image/jpg"){
+            if($file->getTempName()==null || $file->getMimeType()!="image/jpeg"){
                 copy("c:/tmp/vacio.png","c:/tmp/imagen.jpg");
             }else{
                 copy($file->getTempName(),"c:/tmp/imagen.jpg");
@@ -133,6 +137,7 @@ class Home extends BaseController{
         $maleta["mensajeOferta"]=paraOfertas($this->modelo->dimeOfertasMensaje($maleta["usuario"]));
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
         $maleta["misArticulos"]=$this->modelo->queVende(session()->get("codUsu"));
+        echo view("cabecera");
         echo view("vista3",$maleta);
     }
     //Devuelve la vista donde se modifica la informacion del producto Y se ven los mensajes recibidos del mismo
@@ -143,7 +148,7 @@ class Home extends BaseController{
         $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
         //Recupero los mensajes que haya recibido ese producto para mostrarlos 
         $maleta["mensajesRecibidos"]=$this->modelo->mensajesRecibidos($maleta["articulo"]);
-
+        echo view("cabecera");
         return view("vista4",$maleta);
     }
     //Funcion que recoge los datos del formulario y modifica la informacion 
@@ -160,7 +165,7 @@ class Home extends BaseController{
         $maleta["info"]=$this->modelo->datosProducto($maleta["articulo"]);
         $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
         $maleta["mensajesRecibidos"]=$this->modelo->mensajesRecibidos($maleta["articulo"]);
-
+        echo view("cabecera");
         return view("vista4",$maleta);
     }
     //Funcion para cuando se envia un nuevo mensaje 
@@ -182,5 +187,21 @@ class Home extends BaseController{
     public function cerrarSesion(){
         session()->remove("codUsu");
         echo $this->index();
+    }
+    //Muestra una pagina en concreto 
+    public function pagina(){ 
+        if(session()->get("codUsu")>0){
+            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
+        }else{
+            session()->set("codUsu",0);
+            $maleta["usuario"]="anonimo";
+        }
+        $pagina=$this->request->getGet("numPag");
+        $maleta["paginaSeleccionada"]=$pagina;
+        $maleta["paginas"]=$this->modelo->cuantasPaginas(6,0);
+        helper("funciones");
+        $maleta["articulos"]= $this->modelo->articulosEnVenta($pagina,6);
+        $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
+        return view('vista1',$maleta);
     }
 }

@@ -1,0 +1,492 @@
+CRITICAL - 2023-01-26 03:13:48 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 APPPATH\Controllers\Home.php(186): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cerrarSesion()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:01 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Views\vista1.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 4 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 5 APPPATH\Controllers\Home.php(186): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cerrarSesion()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getArrayResult()
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:41 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 26.
+ 1 APPPATH\Views\vista1.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:43 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 26.
+ 1 APPPATH\Views\vista1.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:43 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 26.
+ 1 APPPATH\Views\vista1.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:43 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 26.
+ 1 APPPATH\Views\vista1.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:14:43 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 26.
+ 1 APPPATH\Views\vista1.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:15:45 --> syntax error, unexpected token ";", expecting "function" or "const"
+in APPPATH\Models\modelo.php on line 114.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\modelo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modelo')
+ 3 APPPATH\Controllers\Home.php(12): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modelo')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:15:58 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:15:59 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:15:59 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:16:00 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:16:00 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:16:00 --> Undefined variable $resultado
+in APPPATH\Models\modelo.php on line 109.
+ 1 APPPATH\Models\modelo.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'APPPATH\\Models\\modelo.php', 109)
+ 2 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:20:23 --> syntax error, unexpected identifier "helper", expecting "," or ";"
+in APPPATH\Views\vista1.php on line 27.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 3 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:43:03 --> syntax error, unexpected double-quoted string ">Página ", expecting "," or ";"
+in APPPATH\Views\vista1.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 3 APPPATH\Controllers\Home.php(28): view('vista1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 03:43:03 --> syntax error, unexpected double-quoted string ">Página ", expecting "," or ";"
+in APPPATH\Views\vista1.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 3 APPPATH\Controllers\Home.php(28): view('vista1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-26 03:54:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM articulos' at line 1 in C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\terceraMano\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 C:\xampp\htdocs\terceraMano\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 C:\xampp\htdocs\terceraMano\app\Models\modelo.php(109): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas(6)
+#5 C:\xampp\htdocs\terceraMano\app\Controllers\Home.php(185): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(927): App\Controllers\Home->cerrarSesion()
+#7 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\terceraMano\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\terceraMano\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-26 03:54:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM articulos' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as paginas where activo=1 FROM articulos;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as paginas where activo=1 FROM articulos;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as paginas where activo=1 FROM articulos;')
+ 4 APPPATH\Models\modelo.php(109): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as paginas where activo=1 FROM articulos;')
+ 5 APPPATH\Controllers\Home.php(17): App\Models\Modelo->cuantasPaginas(6)
+ 6 APPPATH\Controllers\Home.php(185): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cerrarSesion()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:24:16 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:24:19 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:24:23 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:24:25 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:24:36 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:24:37 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:25:45 --> syntax error, unexpected double-quote mark
+in APPPATH\Models\modelo.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\modelo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modelo')
+ 3 APPPATH\Controllers\Home.php(12): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modelo')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:26:16 --> Too few arguments to function App\Models\Modelo::articulosPorCategoria(), 1 passed in C:\xampp\htdocs\terceraMano\app\Controllers\Home.php on line 44 and exactly 3 expected
+in APPPATH\Models\modelo.php on line 58.
+ 1 APPPATH\Controllers\Home.php(44): App\Models\Modelo->articulosPorCategoria('1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:26:33 --> Undefined variable $paginas
+in APPPATH\Views\vista1.php on line 43.
+ 1 APPPATH\Views\vista1.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginas', 'APPPATH\\Views\\vista1.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:29:30 --> Too few arguments to function App\Models\Modelo::cuantasPaginas(), 1 passed in C:\xampp\htdocs\terceraMano\app\Controllers\Home.php on line 32 and exactly 2 expected
+in APPPATH\Models\modelo.php on line 107.
+ 1 APPPATH\Controllers\Home.php(32): App\Models\Modelo->cuantasPaginas(6)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:29:53 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Home.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:34:10 --> Unmatched '}'
+in APPPATH\Controllers\Home.php on line 204.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:34:23 --> Too few arguments to function App\Models\Modelo::cuantasPaginas(), 1 passed in C:\xampp\htdocs\terceraMano\app\Controllers\Home.php on line 197 and exactly 2 expected
+in APPPATH\Models\modelo.php on line 107.
+ 1 APPPATH\Controllers\Home.php(197): App\Models\Modelo->cuantasPaginas(6)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:42:03 --> Undefined variable $categoria
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(202): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:42:10 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(202): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:42:11 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(202): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:42:12 --> Array to string conversion
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(202): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:43:30 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:19 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:19 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:44 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:44 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:45 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:45 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:45 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:44:45 --> A non-numeric value encountered
+in APPPATH\Models\modelo.php on line 52.
+ 1 APPPATH\Models\modelo.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Models\\modelo.php', 52)
+ 2 APPPATH\Controllers\Home.php(200): App\Models\Modelo->articulosEnVenta('0?categoria=0', 6)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:46:21 --> syntax error, unexpected token "."
+in APPPATH\Views\vista1.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 3 APPPATH\Controllers\Home.php(201): view('vista1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:46:22 --> syntax error, unexpected token "."
+in APPPATH\Views\vista1.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 3 APPPATH\Controllers\Home.php(201): view('vista1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->pagina()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:51:32 --> syntax error, unexpected variable "$maleta"
+in APPPATH\Controllers\Home.php on line 200.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:52:24 --> Undefined variable $paginaSeleccionada
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginaSeleccionada', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:52:59 --> Undefined variable $paginaSeleccionada
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginaSeleccionada', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(49): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-26 04:53:13 --> Undefined variable $paginaSeleccionada
+in APPPATH\Views\vista1.php on line 44.
+ 1 APPPATH\Views\vista1.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginaSeleccionada', 'APPPATH\\Views\\vista1.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\vista1.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vista1', [], true)
+ 5 APPPATH\Controllers\Home.php(49): view('vista1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filtrarCategorias()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

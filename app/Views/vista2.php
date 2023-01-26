@@ -9,8 +9,6 @@
         
         </head>
         <body>
-            <div id=cabecera>
-                <!-- Imagen o Logotipo de la pagina-->
                 <h1>Identificarse</h1>
             <div class="overlay">
                 <!-- LOGN IN FORM by Omar Dsoky -->
@@ -41,23 +39,23 @@
                         <?php
 
                           $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd");
-                          echo form_password($datos1)."<br><br><br>";
+                          echo form_password($datos1)."<br><br>";
+                          if($mensaje!=""){
+                            echo "<p style=color:red>".$mensaje."</p>";
+                          }
                         ?>
                         <br>
                         <!--        buttons -->
                         <!--      button LogIn -->
                         <button name="boton" value="inicio" class="log-in" type="submit"> Inicia Sesion </button>
                     </div>
-
                     <!--   other buttons -->
                     <div class="other">
                         <!--      Forgot Password button-->
                         <button class="btn submits frgt-pass" type=button>Olvidé la contraseña</button>
                         <!--     Sign Up button -->
                         
-                        <button class="btn submits sign-up" name="boton" value="registrate">Registrate
-                        
-                        </button>
+                        <button class="btn submits sign-up" name="boton" value="registrate">Registrate</button>
                     </div>
                     <!-- End Form -->
                     <?php

@@ -46,6 +46,7 @@ $routes->post("/nuevoArticulo", "Home::nuevoArticulo");
 $routes->post("/nuevoMensaje", "Home::nuevoMensaje");
 $routes->get("/infoProducto", "Home::infoProducto");
 $routes->post("/modificarProducto", "Home::modificarProducto");
+$routes->get("/pagina", "Home::pagina");
 
 /*
  * --------------------------------------------------------------------

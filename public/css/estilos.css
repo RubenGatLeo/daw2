@@ -235,3 +235,15 @@ thead{
 .logo > h1{
 display: inline;
 }
+.pagina{
+   position: absolute;
+   bottom: 30%;
+   left: 40%;
+  }
+.pagina a{
+  font-size: 20px;
+  margin-left: 10px;
+}
+#paginaActual{
+  color:rgb(189, 150, 150);
+}
