@@ -1,7 +1,4 @@
-
-
-
-
+/* Extraido de codepen */
 /* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
 @import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
 /* End Fonts */
@@ -24,7 +21,7 @@ body {
   /*   the main font */
   font-family:"Abel", sans-serif;
   opacity: 0.95;
-  /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+ 
 }
 
 /* |||||||||||||||||||||||||||||||||||||||||||||*/
@@ -128,10 +125,8 @@ input:focus {
   border-radius: 5px;
 }
 
-/* //////////////////////EXTRAIDO DE CODEPEN////////////////////// */
 /* //////////////////////////////////////////// */
-
-/* input[type="text"] {min-width: 250px;} */
+/* //////////////////////////////////////////// */
 /* buttons  */
 button {
   display: inline-block;
@@ -162,7 +157,7 @@ button {
   margin-left: 2%;
 }
 
-/*       Forgot Password button FAF3DD  */
+/*Forgot Password button FAF3DD  */
 .frgt-pass {
   background: transparent;
 }
@@ -190,12 +185,7 @@ button:hover {
     transform: translateY(5px);
   }
 }
-
-
-*{
-    box-sizing:border-box;
-}
-
+/* FIN de lo extraido de codepen */
 body{
     text-align: center;
     background-color: wheat;
@@ -237,7 +227,7 @@ display: inline;
 }
 .pagina{
    position: absolute;
-   bottom: 30%;
+   bottom: 10%;
    left: 40%;
   }
 .pagina a{

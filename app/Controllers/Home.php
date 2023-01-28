@@ -12,34 +12,25 @@ class Home extends BaseController{
         $this->modelo=new Modelo();    
     }
     public function index(){
-       //Paginacion prueba 
-       //Teniendo en cuenta 6 productos por paginas
-        $maleta["paginas"]=$this->modelo->cuantasPaginas(6,0);
+       //Paginacion Teniendo en cuenta 6 productos por paginas
+        $maleta["paginas"]=$this->modelo->cuantasPaginas(6);
         $maleta["paginaSeleccionada"]=0;
-
-        if(session()->get("codUsu")>0){
-            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        }else{
-            session()->set("codUsu",0);
-            $maleta["usuario"]="anonimo";
-        }
+       //INICIO DE LA SESION
+        session()->set("codUsu",0);
+        $maleta["usuario"]="anonimo";
         helper("funciones");
         $maleta["articulos"]= $this->modelo->articulosEnVenta(0,6);
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
+        echo view("cabecera");
         return view('vista1',$maleta);
     }
     //Funcion para mostrar los productos de una categoria en concreto
     public function filtrarCategorias(){
-        if(session()->get("codUsu")>0){
-            $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
-        }else{
-            session()->set("codUsu",0);
-            $maleta["usuario"]="anonimo";
-        }
+        $maleta["usuario"]="anonimo";
         helper("funciones");
         $categoria=$this->request->getPost("categorias");
         if($categoria==0){
-            $maleta["paginas"]=$this->modelo->cuantasPaginas(6,0);
+            $maleta["paginas"]=$this->modelo->cuantasPaginas(6);
             $maleta["paginaSeleccionada"]=0;
             $maleta["articulos"]= $this->modelo->articulosEnVenta(0,6);
         }else{
@@ -47,6 +38,7 @@ class Home extends BaseController{
             $maleta["articulos"]= $this->modelo->articulosPorCategoria($categoria);
         }
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
+        echo view("cabecera");
         return view('vista1',$maleta);
     }
     public function login(){
@@ -65,20 +57,16 @@ class Home extends BaseController{
         if($boton=="registrate"){
             return view("registerView");
         }else{
-
-            
             //Recojo los valores 
             $user=$this->request->getPost("user");
             $contra=$this->request->getPost("contrasena");
-            
-            
             //Compruebo si existe el usuario
             $respuesta=$this->modelo->existeUsuario($user,$contra);
             if($respuesta== "malo"){
                 $maleta["mensaje"]="El usuario o la contraseña son incorrectos";
                 return view("vista2",$maleta);
             }else{
-                //Sesion con codigo de usuario FUNCIONA             
+                //Sesion con codigo de usuario
                 session()->set("codUsu",$respuesta);
                 $maleta["usuario"]=$this->modelo->nombreUsuario(session()->get("codUsu"));
                 $this->verVista3($maleta);
@@ -117,7 +105,7 @@ class Home extends BaseController{
             $titulo=$this->request->getPost("titulo");
             $datos=$this->request->getPost("datos");
             $file=$this->request->getFile("imagen");         
-            if($file->getTempName()==null || $file->getMimeType()!="image/jpeg"){
+            if($file->getTempName()==null || $file->getMimeType()!="image/jpeg"){//Si la imagen es nula o no es de tipo jpeg sube el articulo con una imagen vacia que tengo guardada en tmp como vacio.png
                 copy("c:/tmp/vacio.png","c:/tmp/imagen.jpg");
             }else{
                 copy($file->getTempName(),"c:/tmp/imagen.jpg");
@@ -198,10 +186,11 @@ class Home extends BaseController{
         }
         $pagina=$this->request->getGet("numPag");
         $maleta["paginaSeleccionada"]=$pagina;
-        $maleta["paginas"]=$this->modelo->cuantasPaginas(6,0);
+        $maleta["paginas"]=$this->modelo->cuantasPaginas(6);
         helper("funciones");
         $maleta["articulos"]= $this->modelo->articulosEnVenta($pagina,6);
         $maleta["categorias"]=categorias($this->modelo->dimeCategorias());
+        echo view("cabecera");
         return view('vista1',$maleta);
     }
 }

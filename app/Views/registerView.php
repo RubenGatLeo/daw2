@@ -13,7 +13,7 @@
                 <!-- Imagen o Logotipo de la pagina-->
                 <h1>Identificarse</h1>
             <div class="overlay">
-                <!-- LOGN IN FORM by Omar Dsoky -->
+                <!-- LOGN IN FORM by Omar Dsoky de CODEPEN -->
                 <?php
                     helper("form");
                     $datos=["id"=>"login"];
@@ -23,7 +23,6 @@
                     <!--     Start  header Content  -->
                     <header class="head-form">
                         <h2>Registrate</h2>
-                        <!--     A welcome message or an explanation of the login form -->
                         <p>Registrate si eres un nuevo usuario</p>
                     </header>
                     <!--     End  header Content  -->
@@ -35,29 +34,18 @@
                             echo form_input($datos1)."<br><br><br>";
                             $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario","class"=>"form-input","id"=>"txt-input","required"=>"required");
                             echo form_input($datos1)."<br><br><br>";
+                            $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd","required"=>"required");
+                            echo form_password($datos1)."<br><br><br>";
                         ?>
-                        <br>
-                        <?php
-
-                          $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd","required"=>"required");
-                          echo form_password($datos1)."<br><br><br>";
-                        ?>
-                        <br>
                         <!--        buttons -->
                         <!--      button LogIn -->
                         <button name="boton" value="inicio" class="log-in" type="submit"> Registrarse </button>
-                    </div>
-                    <!--   other buttons -->
-                    <div class="other">
-                       
-                            <!--      End Other the Division -->
-                        </button>
                     </div>
                     <!-- End Form -->
                     <?php
                         echo form_close();
                     ?>
-                    <!--   End Conrainer  -->
+                    <!--   End Container  -->
                     </div>
 
                  

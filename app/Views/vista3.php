@@ -1,11 +1,8 @@
-    <?php
-        //POSIBLEMENTE el usuario sea mejor meterlo en una sesion y asi no tener que reenviarlo cada vez
-        //FUNCIONANDO -^ 
+    <?php 
          echo "<h3 class=user >Usuario identificado: ".$usuario."</h3>";
         //  echo "<a href=".base_url().">Ver Productos</a>";
 
         echo "<br><a href=".base_url()."/cerrarSesion class=login>Cerrar Sesion</a>";
-        echo "<hr>";
 
         echo "<table><thead><tr><th>Mis articulos</th><th>Nuevo articulo</th><th>Estoy interesado</th></tr></thead>";
         echo "</tr><td>";

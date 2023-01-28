@@ -11,7 +11,7 @@
         <body>
                 <h1>Identificarse</h1>
             <div class="overlay">
-                <!-- LOGN IN FORM by Omar Dsoky -->
+                <!-- LOGN IN FORM by Omar Dsoky de codepen -->
                 <?php
                     helper("form");
                     $datos=["id"=>"login"];
@@ -21,23 +21,16 @@
                     <!--     Start  header Content  -->
                     <header class="head-form">
                         <h2>Log in</h2>
-                        <!--     A welcome message or an explanation of the login form -->
                         <p>Inicia sesion usando tu usuario y contraseña</p>
                     </header>
                     <!--     End  header Content  -->
                     <br>
                     <div class="field-set">
-                        <!--   user name -->
                         <!--   user name Input-->
-                        <!-- <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required> -->
                         <?php
                             $datos1=array("name"=>"user","placeholder"=>"Introduce tu Usuario","class"=>"form-input","id"=>"txt-input");
                             echo form_input($datos1)."<br><br><br>";
-                        ?>
-                        <br>
-                        <!--   Password -->
-                        <?php
-
+                       // <!--   Password -->
                           $datos1=array("name"=>"contrasena","placeholder"=>"Introduce tu contraseña","class"=>"form-input","id"=>"pwd");
                           echo form_password($datos1)."<br><br>";
                           if($mensaje!=""){
@@ -63,10 +56,6 @@
                     ?>
                     <!--   End Conrainer  -->
                     </div>
-
-                 
             </div>
-
-            <script src='main.js'></script>
    </body>
 </html>

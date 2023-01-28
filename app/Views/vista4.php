@@ -2,7 +2,7 @@
         helper("form");
         echo "<h3 class=user >Usuario identificado: ".$usuario."</h3>";
         echo "<br><a href='".base_url()."/inicioUsuario' class=login >Volver</a>";
-        echo "<hr>";
+      
 
         //Crear una tabla con la informacion del artiuclo a modificar y los mensajes recibidos
         echo "<table><thead><tr><th>Modificar Articulo</th></tr><tr>";

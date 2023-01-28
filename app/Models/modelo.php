@@ -55,7 +55,7 @@ class Modelo extends Model{
         return $resultado->getResultArray();
     }
     //Funcion que devuelva los datos de los productos en venta de una categoria concreta
-    function articulosPorCategoria($categoria){//Pasar por parametro la Categoria, el numero de pagina en el que esta y cuantos productos por pagina
+    function articulosPorCategoria($categoria){//Pasar por parametro la Categoria
         $orden="SELECT * from articulos where activo=1 and categoria=".$categoria." order by codigo_articulo desc;";
         $resultado=$this->db->query($orden);
         return $resultado->getResultArray();
@@ -79,7 +79,7 @@ class Modelo extends Model{
         $orden="UPDATE articulos SET nombre='".$nombre."', precio=".$precio.", descripcion='".$descripcion."', activo=".$activo." where codigo_articulo=".$cod.";";
         $this->db->query($orden);
     }
-    //Funcion pque devuelve informacion (Nombre,precio y cuando se oferto)sobre los articulos en venta de un usuario
+    //Funcion que devuelve informacion (Nombre,precio y cuando se oferto)sobre los articulos en venta de un usuario
     function queVende($codUs){
         $orden="SELECT  codigo_articulo,nombre,precio,ofertado from articulos where cod_usuario=".$codUs." order by ofertado desc;";
         $resultado=$this->db->query($orden);
@@ -104,13 +104,10 @@ class Modelo extends Model{
         $respuesta=$this->db->query($orden);
         return $respuesta->getResultArray();        
     }
-    function cuantasPaginas($n,$categoria){
-        if($categoria==0){
+    //Funcion que calcula cual va a ser el numero de paginas que necesito Teniendo en cuenta cuantos artiuclos por pagina y la categoria
 
-            $orden="SELECT count(*) as paginas FROM articulos where activo=1;";
-        }else{
-            $orden="SELECT count(*) as paginas FROM articulos where activo=1 and categoria=".$categoria.";";
-        }
+    function cuantasPaginas($n){
+        $orden="SELECT count(*) as paginas FROM articulos where activo=1;";
         $resultado=$this->db->query($orden);
         if($fila=$resultado->getRow()){
            $resultado=ceil($fila->paginas/$n);
